@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url("../img/pattern-background-desktop.svg") center/cover no-repeat;
+  background-color: hsl(225deg, 100%, 94%);
+  color: hsl(223deg, 47%, 23%);
+  letter-spacing: 1px;
+  height: 100vh;
+}
+body section {
+  height: auto;
+  width: 32vw;
+  max-width: 460px;
+  background: #fff;
+  margin: 10vh 35%;
+  border-radius: 20px;
+}
+body section header {
+  height: 25vh;
+  max-height: 220px;
+  background: url("../img/illustration-hero.svg");
+  border-radius: 20px 20px 0 0;
+  background-position: center 35%;
+  background-size: cover;
+}
+body section .container {
+  padding: 5vh 10%;
+}
+body section .container main {
+  height: auto;
+}
+body section .container main h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 3vh;
+  font-weight: 900;
+}
+body section .container main p {
+  text-align: center;
+  color: hsl(224deg, 23%, 55%);
+  margin-bottom: 3vh;
+  font-size: 16px;
+}
+body section .container main .annualPlan {
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 10px;
+  margin-bottom: 3vh;
+  padding: 2.5vh 1.5vw 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 50%);
+}
+body section .container main .annualPlan img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+body section .container main .annualPlan h2 {
+  font-size: 17px;
+  grid-column: 2/4;
+}
+body section .container main .annualPlan p {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+body section .container main .annualPlan a {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 14px;
+  font-weight: 700;
+  grid-column: 4/5;
+  grid-row: 2;
+}
+body section .container main .annualPlan a:hover {
+  color: hsl(245deg, 68%, 62%);
+}
+body section .container footer button {
+  border: none;
+  padding: 2vh 35%;
+  border-radius: 10px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  align-content: center;
+}
+body section .container footer .firstButton {
+  max-height: 45px;
+  background: hsl(245deg, 75%, 52%);
+  color: #fff;
+  box-shadow: 0 20px 20px 0 rgba(99, 133, 255, 0.3);
+}
+body section .container footer .firstButton:hover {
+  background: hsl(245deg, 72%, 56%);
+}
+body section .container footer .secondButton {
+  background: none;
+  color: hsl(224deg, 23%, 55%);
+}
+body section .container footer .secondButton:hover {
+  color: hsl(225deg, 18%, 61%);
+}
+
+@media only screen and (max-width: 501px) {
+  body {
+    background: url("../img/pattern-background-mobile.svg") no-repeat;
+    background-color: hsl(225deg, 100%, 94%);
+  }
+  body section {
+    width: 63vw;
+    margin: 8vh auto;
+  }
+  body section header {
+    height: 16vh;
+  }
+  body section .container {
+    padding: 4vh 10%;
+  }
+  body section .container main {
+    height: auto;
+  }
+  body section .container main h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  body section .container main p {
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  body section .container main .annualPlan {
+    padding: 2vh 4vw 0;
+  }
+  body section .container main .annualPlan h2 {
+    font-size: 15px;
+  }
+  body section .container main .annualPlan a {
+    font-size: 12px;
+  }
+  body section .container main .annualPlan a:hover {
+    color: hsl(245deg, 68%, 62%);
+  }
+  body section .container footer button {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
